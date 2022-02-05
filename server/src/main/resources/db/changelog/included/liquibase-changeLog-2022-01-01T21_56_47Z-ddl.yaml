@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1641074218768-73
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                  name: finished_auctions_shown
+                  type: bit
+            tableName: real_estate
+  - changeSet:
+      id: 1641074218768-74
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: finished_auctions_shown
+                  type: bit
+            tableName: real_estate_aud

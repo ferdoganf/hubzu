@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1606669873805-69
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: guarantee_amount
+                  type: decimal(19, 2)
+            tableName: real_estate
+  - changeSet:
+      id: 1606669873805-70
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: guarantee_amount
+                  type: decimal(19, 2)
+            tableName: real_estate_aud
+  - changeSet:
+      id: 1606669873805-71
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: tender_participation_fee
+                  type: decimal(19, 2)
+            tableName: real_estate
+  - changeSet:
+      id: 1606669873805-72
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: tender_participation_fee
+                  type: decimal(19, 2)
+            tableName: real_estate_aud

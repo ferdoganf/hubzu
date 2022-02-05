@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1603313259953-1
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: INSERT INTO `user_type` (`code`) VALUES ('VISITOR');

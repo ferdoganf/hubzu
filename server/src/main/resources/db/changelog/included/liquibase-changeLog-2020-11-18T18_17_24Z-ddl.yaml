@@ -1,0 +1,170 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1605723461437-69
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: buyer_auto_bidPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueNumeric: 0
+                  name: version
+                  type: BIGINT
+              - column:
+                  name: upper_limit
+                  type: DECIMAL(19, 2)
+              - column:
+                  name: buyer_id
+                  type: BIGINT
+              - column:
+                  name: real_estate_id
+                  type: BIGINT
+            tableName: buyer_auto_bid
+  - changeSet:
+      id: 1605723461437-70
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: buyer_auto_bid_audPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: buyer_auto_bid_audPK
+                  name: rev
+                  type: INT
+              - column:
+                  name: revtype
+                  type: TINYINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  name: upper_limit
+                  type: DECIMAL(19, 2)
+              - column:
+                  name: buyer_id
+                  type: BIGINT
+              - column:
+                  name: real_estate_id
+                  type: BIGINT
+            tableName: buyer_auto_bid_aud
+  - changeSet:
+      id: 1605723461437-71
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: rev
+            baseTableName: buyer_auto_bid_aud
+            constraintName: FK1t1rd2c00suotsybd53y5lh6h
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: rev
+            referencedTableName: revinfo
+            validate: true
+  - changeSet:
+      id: 1605723461437-72
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: real_estate_id
+            baseTableName: buyer_auto_bid
+            constraintName: FK8ejga71109uejqkdadvr1qlxq
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: id
+            referencedTableName: real_estate
+            validate: true
+  - changeSet:
+      id: 1605723461437-73
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: buyer_id
+            baseTableName: buyer_auto_bid
+            constraintName: FKf6xoy5qwhdu7y74nm22ib9b9y
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: id
+            referencedTableName: buyer
+            validate: true

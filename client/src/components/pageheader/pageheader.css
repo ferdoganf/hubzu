@@ -1,0 +1,49 @@
+.ui.pointing.vertical.orange.menu {
+  background-color: #f2711c !important; }
+  .ui.pointing.vertical.orange.menu a.item {
+    color: #fff; }
+
+.app .appheader {
+  background-color: #222;
+  height: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  color: white;
+  box-sizing: initial; }
+  .app .appheader .ui.grid {
+    margin-top: 1rem;
+    margin-bottom: 0rem; }
+    .app .appheader .ui.grid .column .ui.compact.horizontal.segments {
+      border: none;
+      background-color: #222;
+      box-shadow: 0px 0px 0px 0px; }
+      .app .appheader .ui.grid .column .ui.compact.horizontal.segments .ui.basic.inverted.segment {
+        background-color: #222 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    .app .appheader .ui.grid .column h1 {
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+    .app .appheader .ui.grid .column i.user {
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+    .app .appheader .ui.grid .mobile.only.one.column.row .column h1 {
+      padding-top: 0rem;
+      padding-bottom: 0rem; }
+    .app .appheader .ui.grid .mobile.only.one.column.row .column i.user {
+      padding-top: 0rem;
+      padding-bottom: 0rem; }
+    .app .appheader .ui.grid .logo {
+      animation: App-logo-spin infinite 20s linear;
+      height: 80px; }
+  .app .appheader .appTitle {
+    font-size: 1.7em;
+    color: #ff9d03;
+    font-family: Amethysta; }
+  .app .appheader .menuTitle {
+    font-size: 1.6em; }
+    .app .appheader .menuTitle a {
+      color: white; }

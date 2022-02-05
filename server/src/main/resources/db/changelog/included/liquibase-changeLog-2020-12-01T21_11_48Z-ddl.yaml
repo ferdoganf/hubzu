@@ -1,0 +1,566 @@
+databaseChangeLog:
+- changeSet:
+    id: 1606857124520-69
+    author: ferdoganf (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: buyer_warrant_alert
+            type: MEDIUMTEXT
+        tableName: real_estate
+- changeSet:
+    id: 1606857124520-70
+    author: ferdoganf (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: buyer_warrant_alert
+            type: MEDIUMTEXT
+        tableName: real_estate_aud
+- changeSet:
+    id: 1606857124520-71
+    author: ferdoganf (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: deposit_rate
+            type: decimal(19, 2)
+        tableName: real_estate
+- changeSet:
+    id: 1606857124520-72
+    author: ferdoganf (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: deposit_rate
+            type: decimal(19, 2)
+        tableName: real_estate_aud
+- changeSet:
+    id: 1606857124520-73
+    author: ferdoganf (generated)
+    changes:
+    - dropColumn:
+        columnName: guarantee_amount
+        tableName: real_estate
+- changeSet:
+    id: 1606857124520-74
+    author: ferdoganf (generated)
+    changes:
+    - dropColumn:
+        columnName: guarantee_amount
+        tableName: real_estate_aud
+- changeSet:
+    id: 1606857124520-1
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_AGE_OF_BUILDINGCODE_COL
+        tableName: age_of_building
+- changeSet:
+    id: 1606857124520-2
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_AGE_OF_BUILDINGCODE_COL
+        tableName: age_of_building
+- changeSet:
+    id: 1606857124520-3
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_BALCONYCODE_COL
+        tableName: balcony
+- changeSet:
+    id: 1606857124520-4
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_BALCONYCODE_COL
+        tableName: balcony
+- changeSet:
+    id: 1606857124520-5
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_BANKCODE_COL
+        tableName: bank
+- changeSet:
+    id: 1606857124520-6
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_BANKCODE_COL
+        tableName: bank
+- changeSet:
+    id: 1606857124520-7
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_BUILDING_COMPLEXCODE_COL
+        tableName: building_complex
+- changeSet:
+    id: 1606857124520-8
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_BUILDING_COMPLEXCODE_COL
+        tableName: building_complex
+- changeSet:
+    id: 1606857124520-9
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_CITYCODE_COL
+        tableName: city
+- changeSet:
+    id: 1606857124520-10
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_CITYCODE_COL
+        tableName: city
+- changeSet:
+    id: 1606857124520-11
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_COMMERCIAL_TYPECODE_COL
+        tableName: commercial_type
+- changeSet:
+    id: 1606857124520-12
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_COMMERCIAL_TYPECODE_COL
+        tableName: commercial_type
+- changeSet:
+    id: 1606857124520-13
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_DISTRICTCODE_COL
+        tableName: district
+- changeSet:
+    id: 1606857124520-14
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_DISTRICTCODE_COL
+        tableName: district
+- changeSet:
+    id: 1606857124520-15
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_ELIGIBLE_FOR_BANK_CREDITCODE_COL
+        tableName: eligible_for_bank_credit
+- changeSet:
+    id: 1606857124520-16
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_ELIGIBLE_FOR_BANK_CREDITCODE_COL
+        tableName: eligible_for_bank_credit
+- changeSet:
+    id: 1606857124520-17
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_EXTERNAL_PROPERTYCODE_COL
+        tableName: external_property
+- changeSet:
+    id: 1606857124520-18
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_EXTERNAL_PROPERTYCODE_COL
+        tableName: external_property
+- changeSet:
+    id: 1606857124520-19
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_FLOOR_NUMBERCODE_COL
+        tableName: floor_number
+- changeSet:
+    id: 1606857124520-20
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_FLOOR_NUMBERCODE_COL
+        tableName: floor_number
+- changeSet:
+    id: 1606857124520-21
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_FRONTAGECODE_COL
+        tableName: frontage
+- changeSet:
+    id: 1606857124520-22
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_FRONTAGECODE_COL
+        tableName: frontage
+- changeSet:
+    id: 1606857124520-23
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_FURNISHEDCODE_COL
+        tableName: furnished
+- changeSet:
+    id: 1606857124520-24
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_FURNISHEDCODE_COL
+        tableName: furnished
+- changeSet:
+    id: 1606857124520-25
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_GENERAL_FEATURECODE_COL
+        tableName: general_feature
+- changeSet:
+    id: 1606857124520-26
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_GENERAL_FEATURECODE_COL
+        tableName: general_feature
+- changeSet:
+    id: 1606857124520-27
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_GENERAL_PROPERTYCODE_COL
+        tableName: general_property
+- changeSet:
+    id: 1606857124520-28
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_GENERAL_PROPERTYCODE_COL
+        tableName: general_property
+- changeSet:
+    id: 1606857124520-29
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_HEATINGCODE_COL
+        tableName: heating
+- changeSet:
+    id: 1606857124520-30
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_HEATINGCODE_COL
+        tableName: heating
+- changeSet:
+    id: 1606857124520-31
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_HEIGHT_RESTRICTIONCODE_COL
+        tableName: height_restriction
+- changeSet:
+    id: 1606857124520-32
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_HEIGHT_RESTRICTIONCODE_COL
+        tableName: height_restriction
+- changeSet:
+    id: 1606857124520-33
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_INFRASTRUCTURECODE_COL
+        tableName: infrastructure
+- changeSet:
+    id: 1606857124520-34
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_INFRASTRUCTURECODE_COL
+        tableName: infrastructure
+- changeSet:
+    id: 1606857124520-35
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_INTERIOR_PROPERTYCODE_COL
+        tableName: interior_property
+- changeSet:
+    id: 1606857124520-36
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_INTERIOR_PROPERTYCODE_COL
+        tableName: interior_property
+- changeSet:
+    id: 1606857124520-37
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_LAND_STATUSCODE_COL
+        tableName: land_status
+- changeSet:
+    id: 1606857124520-38
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_LAND_STATUSCODE_COL
+        tableName: land_status
+- changeSet:
+    id: 1606857124520-39
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_LAND_TO_BUILDING_RATIOCODE_COL
+        tableName: land_to_building_ratio
+- changeSet:
+    id: 1606857124520-40
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_LAND_TO_BUILDING_RATIOCODE_COL
+        tableName: land_to_building_ratio
+- changeSet:
+    id: 1606857124520-41
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_LAND_TYPECODE_COL
+        tableName: land_type
+- changeSet:
+    id: 1606857124520-42
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_LAND_TYPECODE_COL
+        tableName: land_type
+- changeSet:
+    id: 1606857124520-43
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_NEIGHBORHOODCODE_COL
+        tableName: neighborhood
+- changeSet:
+    id: 1606857124520-44
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_NEIGHBORHOODCODE_COL
+        tableName: neighborhood
+- changeSet:
+    id: 1606857124520-45
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_NUMBER_OF_BATHROOMSCODE_COL
+        tableName: number_of_bathrooms
+- changeSet:
+    id: 1606857124520-46
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_NUMBER_OF_BATHROOMSCODE_COL
+        tableName: number_of_bathrooms
+- changeSet:
+    id: 1606857124520-47
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_NUMBER_OF_FLOORSCODE_COL
+        tableName: number_of_floors
+- changeSet:
+    id: 1606857124520-48
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_NUMBER_OF_FLOORSCODE_COL
+        tableName: number_of_floors
+- changeSet:
+    id: 1606857124520-49
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_NUMBER_OF_ROOMSCODE_COL
+        tableName: number_of_rooms
+- changeSet:
+    id: 1606857124520-50
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_NUMBER_OF_ROOMSCODE_COL
+        tableName: number_of_rooms
+- changeSet:
+    id: 1606857124520-51
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_REAL_ESTATECODE_COL
+        tableName: real_estate
+- changeSet:
+    id: 1606857124520-52
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_REAL_ESTATECODE_COL
+        tableName: real_estate
+- changeSet:
+    id: 1606857124520-53
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_REAL_ESTATE_PHOTOCODE_COL
+        tableName: real_estate_photo
+- changeSet:
+    id: 1606857124520-54
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_REAL_ESTATE_PHOTOCODE_COL
+        tableName: real_estate_photo
+- changeSet:
+    id: 1606857124520-55
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_REAL_ESTATE_STATUSCODE_COL
+        tableName: real_estate_status
+- changeSet:
+    id: 1606857124520-56
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_REAL_ESTATE_STATUSCODE_COL
+        tableName: real_estate_status
+- changeSet:
+    id: 1606857124520-57
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_REAL_ESTATE_TYPECODE_COL
+        tableName: real_estate_type
+- changeSet:
+    id: 1606857124520-58
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_REAL_ESTATE_TYPECODE_COL
+        tableName: real_estate_type
+- changeSet:
+    id: 1606857124520-59
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_RESIDENTIAL_TYPECODE_COL
+        tableName: residential_type
+- changeSet:
+    id: 1606857124520-60
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_RESIDENTIAL_TYPECODE_COL
+        tableName: residential_type
+- changeSet:
+    id: 1606857124520-61
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_USERCODE_COL
+        tableName: user
+- changeSet:
+    id: 1606857124520-62
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_USERCODE_COL
+        tableName: user
+- changeSet:
+    id: 1606857124520-63
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_USER_STATUSCODE_COL
+        tableName: user_status
+- changeSet:
+    id: 1606857124520-64
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_USER_STATUSCODE_COL
+        tableName: user_status
+- changeSet:
+    id: 1606857124520-65
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_USER_TYPECODE_COL
+        tableName: user_type
+- changeSet:
+    id: 1606857124520-66
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_USER_TYPECODE_COL
+        tableName: user_type
+- changeSet:
+    id: 1606857124520-67
+    author: ferdoganf (generated)
+    changes:
+    - dropUniqueConstraint:
+        constraintName: UC_USE_STATUSCODE_COL
+        tableName: use_status
+- changeSet:
+    id: 1606857124520-68
+    author: ferdoganf (generated)
+    changes:
+    - addUniqueConstraint:
+        columnNames: code
+        constraintName: UC_USE_STATUSCODE_COL
+        tableName: use_status
+

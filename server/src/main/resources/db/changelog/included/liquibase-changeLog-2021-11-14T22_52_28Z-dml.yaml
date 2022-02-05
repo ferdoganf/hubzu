@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1636930360553-1
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: INSERT INTO `real_estate_status` (`code`) VALUES ('DRAFT');

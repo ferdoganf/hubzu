@@ -1,0 +1,99 @@
+@import 'color.scss';
+
+html,
+body {
+	overflow-x: hidden;
+	font-family: Open Sans, tahoma, arial, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: Open Sans, tahoma, arial, sans-serif !important;
+}
+
+.ui.header {
+	font-family: Open Sans, tahoma, arial, sans-serif !important;
+}
+
+.ui {
+	font-family: Open Sans, tahoma, arial, sans-serif !important;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $background;
+	white-space: pre-line;
+
+	@mixin socialMediaButton {
+		color: #fff;
+		text-shadow: none;
+		background-image: none;
+		box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+	}
+
+	.ui.flickr.button {
+		@include socialMediaButton;
+		background-color: #000000;
+		&:hover {
+			background-color: #333333;
+		}
+		&:active {
+			background-color: #666666;
+		}
+	}
+}
+
+.app {
+	margin-top: -1rem;
+
+	.ui.foreground.button {
+		background-color: $foreground;
+		color: #fff;
+		text-shadow: none;
+		background-image: none;
+	}
+
+	.ui.basic.foreground.button {
+		background: 0 0 !important;
+		box-shadow: 0 0 0 1px $foreground inset !important;
+		color: $foreground !important;
+	}
+
+	.body {
+		min-height: 90vh;
+	}
+
+	.ui.padded.segment.miny {
+		width: 540px;
+		margin: auto;
+		min-height: 480px;
+
+		@include small-screen {
+			width: 360px;
+			min-height: 270px;
+		}
+
+		button {
+			margin-top: 10px;
+		}
+	}
+
+	.ui.padded.segment.tiny {
+		width: 480px;
+		margin: auto;
+		min-height: 160px;
+
+		@include small-screen {
+			width: 340px;
+			min-height: 90px;
+		}
+
+		button {
+			margin-top: 10px;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1606940663171-69
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                  name: hold_deposit
+                  type: bit
+            tableName: real_estate
+  - changeSet:
+      id: 1606940663171-70
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: hold_deposit
+                  type: bit
+            tableName: real_estate_aud

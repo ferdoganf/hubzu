@@ -1,0 +1,27 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1642884593793-1
+      author: ferdoganf (generated)
+      changes:
+          - sql:
+              sql: INSERT INTO `user_type` (`code`) VALUES ('OPERATION');
+          - sql:
+              sql: INSERT INTO `user` (`email_address`, `password`, `user_status_id`, `user_type_id`, `name`, `surname`, `code`) VALUES ('operation1@gmail.com', '$2y$12$amluOG5hdk8DDUyLCrbVAOMXzjQtQRNF63Mf6g4tNX/56YjeWLi0y', (SELECT `id` FROM `user_status` WHERE `code` = 'ACTIVE'), (SELECT `id` FROM `user_type` WHERE `code` = 'OPERATION'), 'Ope', 'Ration 1', 'b191dd72-383a-42a2-9a90-3b6159d5cd1c');
+          - sql:
+              sql: INSERT INTO `user` (`email_address`, `password`, `user_status_id`, `user_type_id`, `name`, `surname`, `code`) VALUES ('operation2@gmail.com', '$2y$12$amluOG5hdk8DDUyLCrbVAOMXzjQtQRNF63Mf6g4tNX/56YjeWLi0y', (SELECT `id` FROM `user_status` WHERE `code` = 'ACTIVE'), (SELECT `id` FROM `user_type` WHERE `code` = 'OPERATION'), 'Ope', 'Ration 2', 'b9b38b63-d9e0-4cfc-8101-e74316a8f131');
+          - sql:
+              sql: INSERT INTO `user` (`email_address`, `password`, `user_status_id`, `user_type_id`, `name`, `surname`, `code`) VALUES ('operation3@gmail.com', '$2y$12$amluOG5hdk8DDUyLCrbVAOMXzjQtQRNF63Mf6g4tNX/56YjeWLi0y', (SELECT `id` FROM `user_status` WHERE `code` = 'ACTIVE'), (SELECT `id` FROM `user_type` WHERE `code` = 'OPERATION'), 'Ope', 'Ration 3', '85aba6a9-ad27-4642-8503-d4c9b10f175c');
+          - sql:
+              sql: INSERT INTO `user` (`email_address`, `password`, `user_status_id`, `user_type_id`, `name`, `surname`, `code`) VALUES ('operation4@gmail.com', '$2y$12$amluOG5hdk8DDUyLCrbVAOMXzjQtQRNF63Mf6g4tNX/56YjeWLi0y', (SELECT `id` FROM `user_status` WHERE `code` = 'ACTIVE'), (SELECT `id` FROM `user_type` WHERE `code` = 'OPERATION'), 'Ope', 'Ration 4', '19c63a2c-f7c5-4ade-8e9a-c139b88cadcf');
+          - sql:
+              sql: INSERT INTO `user` (`email_address`, `password`, `user_status_id`, `user_type_id`, `name`, `surname`, `code`) VALUES ('operation5@gmail.com', '$2y$12$amluOG5hdk8DDUyLCrbVAOMXzjQtQRNF63Mf6g4tNX/56YjeWLi0y', (SELECT `id` FROM `user_status` WHERE `code` = 'ACTIVE'), (SELECT `id` FROM `user_type` WHERE `code` = 'OPERATION'), 'Ope', 'Ration 5', '8d691513-0dcd-410f-8ab5-ff60e9a95ef0');
+          - sql:
+              sql: INSERT INTO `operation` (`id`) VALUES ((SELECT `id` FROM `user` WHERE `email_address` = 'operation1@gmail.com'));
+          - sql:
+              sql: INSERT INTO `operation` (`id`) VALUES ((SELECT `id` FROM `user` WHERE `email_address` = 'operation2@gmail.com'));
+          - sql:
+              sql: INSERT INTO `operation` (`id`) VALUES ((SELECT `id` FROM `user` WHERE `email_address` = 'operation3@gmail.com'));
+          - sql:
+              sql: INSERT INTO `operation` (`id`) VALUES ((SELECT `id` FROM `user` WHERE `email_address` = 'operation4@gmail.com'));
+          - sql:
+              sql: INSERT INTO `operation` (`id`) VALUES ((SELECT `id` FROM `user` WHERE `email_address` = 'operation5@gmail.com'));

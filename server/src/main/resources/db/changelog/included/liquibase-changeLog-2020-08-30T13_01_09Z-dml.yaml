@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1598792479745-69
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: INSERT INTO `bank` (`code`, `name`) VALUES ('146','Odeabank'),('203','Albaraka Türk'),('13','Denizbank'),('103','Fibabanka');

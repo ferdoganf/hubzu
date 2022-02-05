@@ -1,0 +1,23 @@
+$foreground: #2e4d04;
+$background: #f4f4f4;
+
+$appTitleStart: #2e4d04;
+$appTitleEnd: #f2711c;
+
+@mixin small-screen {
+	@media (min-width: 320px) and (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin medium-screen {
+	@media (min-width: 768px) and (max-width: 1023px) {
+		@content;
+	}
+}
+
+@mixin large-screen {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}

@@ -1,0 +1,55 @@
+@import './../../common/ui/color.scss';
+
+.app {
+	.appheaderPanel {
+		.ui.padded.segment.miny {
+			min-height: 50px;
+		}
+
+		.appheader {
+			
+
+			.ui.basic.inverted.segment {
+				margin: 0em;
+				
+				.ui.breadcrumb {
+					color: white;
+					.divider {						
+						font-weight: bold;
+					}
+					.active.section {						
+						font-weight: bold;
+					}
+					a.section {
+						color: white;
+						font-weight: bold;
+					}
+				}
+			}
+			.ui.menu.top {
+				background-color: white;
+				padding-top: 10px;
+				color: $foreground;
+				border-bottom:1px solid rgba(34, 36, 38, 0.15);				
+				.orangeDropdownItem.item, .orangeDropdownItem.item:hover {
+					background-color: orange !important;
+					cursor: default;
+				}
+				h1.appTitle {					
+					a {
+						color: $foreground;
+						font-size: 1.8rem;
+						span.appTitleStart {
+							color: $appTitleStart;
+							font-size: 2rem;
+						}
+						span.appTitleEnd {
+							color: $appTitleEnd;
+							font-size: 2rem;
+						}
+					}
+				}
+			}			
+		}
+	}
+}

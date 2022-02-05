@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1607028466510-69
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                  name: in_advance
+                  type: bit
+            tableName: real_estate
+  - changeSet:
+      id: 1607028466510-70
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: in_advance
+                  type: bit
+            tableName: real_estate_aud
+  - changeSet:
+      id: 1607028466510-71
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: in_advance_amount
+                  type: decimal(19, 2)
+            tableName: real_estate
+  - changeSet:
+      id: 1607028466510-72
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: in_advance_amount
+                  type: decimal(19, 2)
+            tableName: real_estate_aud

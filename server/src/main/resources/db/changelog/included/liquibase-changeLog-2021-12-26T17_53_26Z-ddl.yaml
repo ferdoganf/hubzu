@@ -1,0 +1,721 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1640541226135-73
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: age_of_building
+  - changeSet:
+      id: 1640541226135-74
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: age_of_building_aud
+  - changeSet:
+      id: 1640541226135-75
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: balcony
+  - changeSet:
+      id: 1640541226135-76
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: balcony_aud
+  - changeSet:
+      id: 1640541226135-77
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: bank
+  - changeSet:
+      id: 1640541226135-78
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: bank_aud
+  - changeSet:
+      id: 1640541226135-79
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: building_complex
+  - changeSet:
+      id: 1640541226135-80
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: building_complex_aud
+  - changeSet:
+      id: 1640541226135-81
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: city
+  - changeSet:
+      id: 1640541226135-82
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: city_aud
+  - changeSet:
+      id: 1640541226135-83
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: commercial_type
+  - changeSet:
+      id: 1640541226135-84
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: commercial_type_aud
+  - changeSet:
+      id: 1640541226135-85
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: contract
+  - changeSet:
+      id: 1640541226135-86
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: contract_aud
+  - changeSet:
+      id: 1640541226135-87
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: district
+  - changeSet:
+      id: 1640541226135-88
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: district_aud
+  - changeSet:
+      id: 1640541226135-89
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: eligible_for_bank_credit
+  - changeSet:
+      id: 1640541226135-90
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: eligible_for_bank_credit_aud
+  - changeSet:
+      id: 1640541226135-91
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: external_property
+  - changeSet:
+      id: 1640541226135-92
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: external_property_aud
+  - changeSet:
+      id: 1640541226135-93
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: floor_number
+  - changeSet:
+      id: 1640541226135-94
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: floor_number_aud
+  - changeSet:
+      id: 1640541226135-95
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: frontage
+  - changeSet:
+      id: 1640541226135-96
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: frontage_aud
+  - changeSet:
+      id: 1640541226135-97
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: furnished
+  - changeSet:
+      id: 1640541226135-98
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: furnished_aud
+  - changeSet:
+      id: 1640541226135-99
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: general_feature
+  - changeSet:
+      id: 1640541226135-100
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: general_feature_aud
+  - changeSet:
+      id: 1640541226135-101
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: general_property
+  - changeSet:
+      id: 1640541226135-102
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: general_property_aud
+  - changeSet:
+      id: 1640541226135-103
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: heating
+  - changeSet:
+      id: 1640541226135-104
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: heating_aud
+  - changeSet:
+      id: 1640541226135-105
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: height_restriction
+  - changeSet:
+      id: 1640541226135-106
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: height_restriction_aud
+  - changeSet:
+      id: 1640541226135-107
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: infrastructure
+  - changeSet:
+      id: 1640541226135-108
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: infrastructure_aud
+  - changeSet:
+      id: 1640541226135-109
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: interior_property
+  - changeSet:
+      id: 1640541226135-110
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: interior_property_aud
+  - changeSet:
+      id: 1640541226135-111
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: land_status
+  - changeSet:
+      id: 1640541226135-112
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: land_status_aud
+  - changeSet:
+      id: 1640541226135-113
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: land_to_building_ratio
+  - changeSet:
+      id: 1640541226135-114
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: land_to_building_ratio_aud
+  - changeSet:
+      id: 1640541226135-115
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: land_type
+  - changeSet:
+      id: 1640541226135-116
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: land_type_aud
+  - changeSet:
+      id: 1640541226135-117
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: neighborhood
+  - changeSet:
+      id: 1640541226135-118
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: neighborhood_aud
+  - changeSet:
+      id: 1640541226135-119
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: number_of_bathrooms
+  - changeSet:
+      id: 1640541226135-120
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: number_of_bathrooms_aud
+  - changeSet:
+      id: 1640541226135-121
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: number_of_floors
+  - changeSet:
+      id: 1640541226135-122
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: number_of_floors_aud
+  - changeSet:
+      id: 1640541226135-123
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: number_of_rooms
+  - changeSet:
+      id: 1640541226135-124
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: number_of_rooms_aud
+  - changeSet:
+      id: 1640541226135-125
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: real_estate
+  - changeSet:
+      id: 1640541226135-126
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: real_estate_aud
+  - changeSet:
+      id: 1640541226135-127
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: real_estate_photo
+  - changeSet:
+      id: 1640541226135-128
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: real_estate_photo_aud
+  - changeSet:
+      id: 1640541226135-129
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: real_estate_status
+  - changeSet:
+      id: 1640541226135-130
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: real_estate_status_aud
+  - changeSet:
+      id: 1640541226135-131
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: real_estate_type
+  - changeSet:
+      id: 1640541226135-132
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: real_estate_type_aud
+  - changeSet:
+      id: 1640541226135-133
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: residential_type
+  - changeSet:
+      id: 1640541226135-134
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: residential_type_aud
+  - changeSet:
+      id: 1640541226135-135
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: sms
+  - changeSet:
+      id: 1640541226135-136
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: sms_aud
+  - changeSet:
+      id: 1640541226135-137
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: use_status
+  - changeSet:
+      id: 1640541226135-138
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: use_status_aud
+  - changeSet:
+      id: 1640541226135-139
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: user
+  - changeSet:
+      id: 1640541226135-140
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: user_aud
+  - changeSet:
+      id: 1640541226135-141
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: user_status
+  - changeSet:
+      id: 1640541226135-142
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: user_status_aud
+  - changeSet:
+      id: 1640541226135-143
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: user_type
+  - changeSet:
+      id: 1640541226135-144
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: forced_name
+                  type: varchar(255)
+            tableName: user_type_aud

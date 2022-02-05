@@ -1,0 +1,75 @@
+server:
+  port: 8086
+  error:
+    include-stacktrace: never
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hubzu?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+  cloud:
+    gcp:
+      storage:
+        enabled: false
+  liquibase:
+    url: jdbc:mysql://localhost:3306/hubzu?useUnicode=true&characterEncoding=utf8
+    user: root
+    password: root
+  mail:
+    default-encoding: UTF-8
+    host: smtp.yandex.com.tr
+    username: bildirim@gmail.com
+    password: Propturkey_123
+    port: 465
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: false
+          ssl:
+            enable: true
+        transport:
+          protocol: smtp
+    protocol: smtp
+    test-connection: false
+  http:
+    multipart:
+      enabled: true
+  boot:
+    admin:
+      notify:
+        mail:
+          enabled: true
+          from: ferdoganf@gmail.com
+          to: ferdoganf@gmail.com
+hubzu:
+  security:
+    jwt:
+      client-id-web: hubzuweb
+      client-secret-web: $2a$10$P23HSdw9.BLdglbz3oB.OutDUdyJsMQKLGDQQyGOSye4EaF94ZTCC
+    access-token-validity-seconds-web: 600
+    refresh-token-validity-seconds-web: 2592000
+  image:
+    root:
+      folder: /var/hubzu/cdn
+  mail:
+    admin: ferdoganf@gmail.com
+    from: ferdoganf@gmail.com
+    bcc: ferdoganf@gmail.com
+    contactus:
+      to: ferdoganf@gmail.com
+  url:
+    base: http://localhost:3000
+
+logging:
+  level:
+    org:
+      zalando:
+        logbook: ERROR

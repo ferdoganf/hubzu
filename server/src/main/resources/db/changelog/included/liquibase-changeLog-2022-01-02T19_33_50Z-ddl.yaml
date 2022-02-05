@@ -1,0 +1,187 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1641152047938-73
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: direct_bidPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueNumeric: 0
+                  name: version
+                  type: BIGINT
+              - column:
+                  name: bid_amount
+                  type: DECIMAL(19, 2)
+              - column:
+                  name: email_address
+                  type: VARCHAR(255)
+              - column:
+                  name: identity_number
+                  type: VARCHAR(255)
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: phone
+                  type: VARCHAR(255)
+              - column:
+                  name: phone_country_code
+                  type: VARCHAR(255)
+              - column:
+                  name: surname
+                  type: VARCHAR(255)
+              - column:
+                  name: real_estate_id
+                  type: BIGINT
+            tableName: direct_bid
+  - changeSet:
+      id: 1641152047938-74
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: direct_bid_audPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: direct_bid_audPK
+                  name: rev
+                  type: INT
+              - column:
+                  name: revtype
+                  type: TINYINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  name: bid_amount
+                  type: DECIMAL(19, 2)
+              - column:
+                  name: email_address
+                  type: VARCHAR(255)
+              - column:
+                  name: identity_number
+                  type: VARCHAR(255)
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: phone
+                  type: VARCHAR(255)
+              - column:
+                  name: phone_country_code
+                  type: VARCHAR(255)
+              - column:
+                  name: surname
+                  type: VARCHAR(255)
+              - column:
+                  name: real_estate_id
+                  type: BIGINT
+            tableName: direct_bid_aud
+  - changeSet:
+      id: 1641152047938-75
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: rev
+            baseTableName: direct_bid_aud
+            constraintName: FK4s3d0xcxwpijgi4qurjpoimle
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: rev
+            referencedTableName: revinfo
+            validate: true
+  - changeSet:
+      id: 1641152047938-76
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: real_estate_id
+            baseTableName: direct_bid
+            constraintName: FKput2drgaw5n8ky9y6ubbr11ts
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: id
+            referencedTableName: real_estate
+            validate: true

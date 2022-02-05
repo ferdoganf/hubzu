@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1585385644241-1
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: INSERT INTO `real_estate_status` (`code`) VALUES ('CANCELLED');

@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1606848573215-69
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: buyer_warrant_alert
+                  type: MEDIUMTEXT
+            tableName: bank
+  - changeSet:
+      id: 1606848573215-70
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: buyer_warrant_alert
+                  type: MEDIUMTEXT
+            tableName: bank_aud

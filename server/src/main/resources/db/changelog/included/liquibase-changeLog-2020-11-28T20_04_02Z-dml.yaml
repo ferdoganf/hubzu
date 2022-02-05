@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1606593854653-1
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: UPDATE `bank` set `code` = 'odeabank' WHERE `name` =  'Odeabank';
+        - sql:
+            sql: UPDATE `bank` set `code` = 'albaraka' WHERE `name` =  'Albaraka Türk';
+        - sql:
+            sql: UPDATE `bank` set `code` = 'denizbank' WHERE `name` =  'Denizbank';
+        - sql:
+            sql: UPDATE `bank` set `code` = 'fibabanka' WHERE `name` =  'Fibabanka';
+        - sql:
+            sql: UPDATE `bank` set `code` = 'ziraatbank' WHERE `name` =  'Ziraat Bankası';
+        - sql:
+            sql: UPDATE `bank` set `code` = 'isbank' WHERE `name` =  'Türkiye İş Bankası';
+        - sql:
+            sql: UPDATE `bank` set `code` = 'halkbank' WHERE `name` =  'Türkiye Halk Bankası';
+        - sql:
+            sql: UPDATE `bank` set `code` = 'vakifbank' WHERE `name` =  'Vakıfbank';
+        - sql:
+            sql: UPDATE `bank` set `code` = 'garantibbva' WHERE `name` =  'Garanti Bankası';
+        - sql:
+            sql: UPDATE `bank` set `code` = 'yapikredi' WHERE `name` =  'Yapı ve Kredi Bankası';
+        - sql:
+            sql: UPDATE `bank` set `code` = 'akbank' WHERE `name` =  'Akbank';
+        - sql:
+            sql: INSERT INTO `bank` (`code`, `name`) VALUES ('alternatifbank','Alternatifbank'),('anadolubank','Anadolubank'),('qnbfinansbank','QNB Finansbank'),('ingbank','ING Bank');
+        - sql:
+            sql: INSERT INTO `bank` (`code`, `name`) VALUES ('burgan','Burgan Bank'),('teb','TEB'),('icbc','ICBC'),('sekerbank','Şeker Bank');
+        - sql:
+            sql: INSERT INTO `bank` (`code`, `name`) VALUES ('aktifbank','Aktif Bank');

@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1641074301152-1
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: UPDATE `real_estate` SET `finished_auctions_shown` = true WHERE `id` > 0;

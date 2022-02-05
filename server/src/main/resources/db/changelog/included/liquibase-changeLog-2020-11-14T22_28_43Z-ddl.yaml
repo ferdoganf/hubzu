@@ -1,0 +1,121 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1605392943339-69
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: account_bank
+                  type: varchar(255)
+            tableName: bank
+  - changeSet:
+      id: 1605392943339-70
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: account_bank
+                  type: varchar(255)
+            tableName: bank_aud
+  - changeSet:
+      id: 1605392943339-71
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: account_branch_name
+                  type: varchar(255)
+            tableName: bank
+  - changeSet:
+      id: 1605392943339-72
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: account_branch_name
+                  type: varchar(255)
+            tableName: bank_aud
+  - changeSet:
+      id: 1605392943339-73
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: account_branch_no
+                  type: varchar(255)
+            tableName: bank
+  - changeSet:
+      id: 1605392943339-74
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: account_branch_no
+                  type: varchar(255)
+            tableName: bank_aud
+  - changeSet:
+      id: 1605392943339-75
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: account_iban_no
+                  type: varchar(255)
+            tableName: bank
+  - changeSet:
+      id: 1605392943339-76
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: account_iban_no
+                  type: varchar(255)
+            tableName: bank_aud
+  - changeSet:
+      id: 1605392943339-77
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: account_no
+                  type: varchar(255)
+            tableName: bank
+  - changeSet:
+      id: 1605392943339-78
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: account_no
+                  type: varchar(255)
+            tableName: bank_aud
+  - changeSet:
+      id: 1605392943339-79
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: deposit_rate
+                  type: decimal(19, 2)
+            tableName: bank
+  - changeSet:
+      id: 1605392943339-80
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: deposit_rate
+                  type: decimal(19, 2)
+            tableName: bank_aud

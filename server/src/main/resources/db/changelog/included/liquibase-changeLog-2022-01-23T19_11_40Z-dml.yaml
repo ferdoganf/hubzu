@@ -1,0 +1,61 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1642965113670-1
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: INSERT INTO `calendar` (`code`, `name`) VALUES ('TR','Turkey Calendar');
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-01-01', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-04-23', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-05-01', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-05-02', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-05-03', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-05-04', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-05-19', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-07-09', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-07-10', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-07-11', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-07-12', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-07-15', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-08-30', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2022-10-29', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-01-01', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-04-21', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-04-22', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-04-23', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-05-01', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-05-19', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-06-28', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-06-29', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-06-30', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-07-01', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-07-15', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-08-30', false);
+        - sql:
+            sql: INSERT INTO `holiday` (`calendar_id`, `holiday_date`, `half_day`) VALUES ((SELECT `id` FROM `calendar` WHERE `code` = 'TR'), '2023-10-29', false);

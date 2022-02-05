@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1606848689200-69
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: UPDATE `bank` set deposit_rate = 10, `buyer_warrant_alert` = 'Bu ilan için teklif verebilmek yetkiniz bulunmamaktadır! \nTeklif verebilmek için aşağıdaki banka hesabına, {DepositAmount} TL tutarında teminatı yatırmanız gerekmektedir. \n\nBanka:\nŞube:\nŞube No:\nHesapNo:\nIban:\n\nDaha detaylı bilgi için lütfen iletişim sayfası üzerinden bizimle iletişime geçiniz.' WHERE `id` >  0;

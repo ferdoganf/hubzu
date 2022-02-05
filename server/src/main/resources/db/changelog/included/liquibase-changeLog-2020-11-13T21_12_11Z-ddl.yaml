@@ -1,0 +1,230 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1605301956000-69
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: user_favouritePK
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueNumeric: 0
+                  name: version
+                  type: BIGINT
+              - column:
+                  name: real_estate_id
+                  type: BIGINT
+              - column:
+                  name: user_id
+                  type: BIGINT
+            tableName: user_favourite
+  - changeSet:
+      id: 1605301956000-70
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: user_favourite_audPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: user_favourite_audPK
+                  name: rev
+                  type: INT
+              - column:
+                  name: revtype
+                  type: TINYINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  name: real_estate_id
+                  type: BIGINT
+              - column:
+                  name: user_id
+                  type: BIGINT
+            tableName: user_favourite_aud
+  - changeSet:
+      id: 1605301956000-71
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: real_estate_id
+            baseTableName: user_favourite
+            constraintName: FK7qxyaktsnx230tp4r7isiedjo
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: id
+            referencedTableName: real_estate
+            validate: true
+  - changeSet:
+      id: 1605301956000-72
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: user_id
+            baseTableName: user_favourite
+            constraintName: FKcxihg90q1v81n68x188dl6imk
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: id
+            referencedTableName: user
+            validate: true
+  - changeSet:
+      id: 1605301956000-73
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: rev
+            baseTableName: user_favourite_aud
+            constraintName: FKk62tjih34cgqcrysosaomwwtw
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: rev
+            referencedTableName: revinfo
+            validate: true
+  - changeSet:
+      id: 1605301956000-74
+      author: ferdoganf (generated)
+      changes:
+        - dropForeignKeyConstraint:
+            baseTableName: buyer_favourite
+            constraintName: FK5h2nhi1wjasi839u41c6nlyyb
+  - changeSet:
+      id: 1605301956000-75
+      author: ferdoganf (generated)
+      changes:
+        - dropForeignKeyConstraint:
+            baseTableName: buyer_favourite
+            constraintName: FK781x2xs58tl6lwx3wobqkjp6h
+  - changeSet:
+      id: 1605301956000-76
+      author: ferdoganf (generated)
+      changes:
+        - dropForeignKeyConstraint:
+            baseTableName: visitor_favourite
+            constraintName: FK9eoktqdgh66ya4f3j2u5tinxs
+  - changeSet:
+      id: 1605301956000-77
+      author: ferdoganf (generated)
+      changes:
+        - dropForeignKeyConstraint:
+            baseTableName: visitor_favourite
+            constraintName: FKnoi4r5m621eunn1w0m5lpe0e8
+  - changeSet:
+      id: 1605301956000-78
+      author: ferdoganf (generated)
+      changes:
+        - dropForeignKeyConstraint:
+            baseTableName: buyer_favourite_aud
+            constraintName: FKrc1ei1na2ahmub3is95g5jll0
+  - changeSet:
+      id: 1605301956000-79
+      author: ferdoganf (generated)
+      changes:
+        - dropForeignKeyConstraint:
+            baseTableName: visitor_favourite_aud
+            constraintName: FKtbpjodyegqbqgbt75jbxn95eu
+  - changeSet:
+      id: 1605301956000-80
+      author: ferdoganf (generated)
+      changes:
+        - dropTable:
+            tableName: buyer_favourite
+  - changeSet:
+      id: 1605301956000-81
+      author: ferdoganf (generated)
+      changes:
+        - dropTable:
+            tableName: buyer_favourite_aud
+  - changeSet:
+      id: 1605301956000-82
+      author: ferdoganf (generated)
+      changes:
+        - dropTable:
+            tableName: visitor_favourite
+  - changeSet:
+      id: 1605301956000-83
+      author: ferdoganf (generated)
+      changes:
+        - dropTable:
+            tableName: visitor_favourite_aud

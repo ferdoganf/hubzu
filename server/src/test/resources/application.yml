@@ -1,0 +1,33 @@
+server:
+  port: 8086
+  error:
+    include-stacktrace: never
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hubzu
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  cloud:
+    gcp:
+      storage:
+        enabled: false
+
+hubzu:
+  security:
+    jwt:
+      client-id-web: hubzuweb
+      client-secret-web: $2a$10$P23HSdw9.BLdglbz3oB.OutDUdyJsMQKLGDQQyGOSye4EaF94ZTCC
+    access-token-validity-seconds-web: 600
+    refresh-token-validity-seconds-web: 2592000
+
+logging:
+  level:
+    org:
+      zalando:
+        logbook: TRACE

@@ -1,0 +1,240 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1605033449380-69
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  name: identity_number
+                  type: VARCHAR(255)
+              - column:
+                  name: phone
+                  type: VARCHAR(255)
+              - column:
+                  name: phone_country_code
+                  type: VARCHAR(255)
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: visitorPK
+                  name: id
+                  type: BIGINT
+            tableName: visitor
+  - changeSet:
+      id: 1605033449380-70
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: visitor_audPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: visitor_audPK
+                  name: rev
+                  type: INT
+              - column:
+                  name: identity_number
+                  type: VARCHAR(255)
+              - column:
+                  name: phone
+                  type: VARCHAR(255)
+              - column:
+                  name: phone_country_code
+                  type: VARCHAR(255)
+            tableName: visitor_aud
+  - changeSet:
+      id: 1605033449380-71
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: visitor_favouritePK
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueNumeric: 0
+                  name: version
+                  type: BIGINT
+              - column:
+                  name: real_estate_id
+                  type: BIGINT
+              - column:
+                  name: visitor_id
+                  type: BIGINT
+            tableName: visitor_favourite
+  - changeSet:
+      id: 1605033449380-72
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: visitor_favourite_audPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: visitor_favourite_audPK
+                  name: rev
+                  type: INT
+              - column:
+                  name: revtype
+                  type: TINYINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  name: real_estate_id
+                  type: BIGINT
+              - column:
+                  name: visitor_id
+                  type: BIGINT
+            tableName: visitor_favourite_aud
+  - changeSet:
+      id: 1605033449380-73
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: id
+            baseTableName: visitor
+            constraintName: FK8hbrmc05xhspj2bfi1qy34syn
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: id
+            referencedTableName: user
+            validate: true
+  - changeSet:
+      id: 1605033449380-74
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: real_estate_id
+            baseTableName: visitor_favourite
+            constraintName: FK9eoktqdgh66ya4f3j2u5tinxs
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: id
+            referencedTableName: real_estate
+            validate: true
+  - changeSet:
+      id: 1605033449380-75
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: id,rev
+            baseTableName: visitor_aud
+            constraintName: FKgmc60v4pbb7v3jlm9wbnlhlgu
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: id,rev
+            referencedTableName: user_aud
+            validate: true
+  - changeSet:
+      id: 1605033449380-76
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: visitor_id
+            baseTableName: visitor_favourite
+            constraintName: FKnoi4r5m621eunn1w0m5lpe0e8
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: id
+            referencedTableName: visitor
+            validate: true
+  - changeSet:
+      id: 1605033449380-77
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: rev
+            baseTableName: visitor_favourite_aud
+            constraintName: FKtbpjodyegqbqgbt75jbxn95eu
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: rev
+            referencedTableName: revinfo
+            validate: true

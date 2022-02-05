@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1586200592040-1
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: UPDATE `user` SET `email_address` = 'admin@gmail.com' WHERE `email_address` = 'admin@hubzu.com';
+        - sql:
+            sql: UPDATE `user` SET `email_address` = 'buyer@gmail.com' WHERE `email_address` = 'buyer@hubzu.com';

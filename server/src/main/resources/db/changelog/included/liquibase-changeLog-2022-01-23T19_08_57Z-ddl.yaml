@@ -1,0 +1,310 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1642964955900-73
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: calendarPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueNumeric: 0
+                  name: version
+                  type: BIGINT
+              - column:
+                  name: code
+                  type: VARCHAR(255)
+              - column:
+                  name: forced_name
+                  type: VARCHAR(255)
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+            tableName: calendar
+  - changeSet:
+      id: 1642964955900-74
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: calendar_audPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: calendar_audPK
+                  name: rev
+                  type: INT
+              - column:
+                  name: revtype
+                  type: TINYINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  name: code
+                  type: VARCHAR(255)
+              - column:
+                  name: forced_name
+                  type: VARCHAR(255)
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+            tableName: calendar_aud
+  - changeSet:
+      id: 1642964955900-75
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: holidayPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  constraints:
+                    nullable: false
+                  defaultValueNumeric: 0
+                  name: version
+                  type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: half_day
+                  type: BIT
+              - column:
+                  name: holiday_date
+                  type: date
+              - column:
+                  name: calendar_id
+                  type: BIGINT
+            tableName: holiday
+  - changeSet:
+      id: 1642964955900-76
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: holiday_audPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: holiday_audPK
+                  name: rev
+                  type: INT
+              - column:
+                  name: revtype
+                  type: TINYINT
+              - column:
+                  name: client_created_date
+                  type: datetime
+              - column:
+                  name: client_last_modified_date
+                  type: datetime
+              - column:
+                  name: correlation_id
+                  type: VARCHAR(255)
+              - column:
+                  name: created_by
+                  type: VARCHAR(255)
+              - column:
+                  name: created_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  defaultValueBoolean: false
+                  name: deleted
+                  type: BIT(1)
+              - column:
+                  name: deletion_token
+                  type: BIGINT
+              - column:
+                  name: last_modified_by
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_client_ip
+                  type: VARCHAR(255)
+              - column:
+                  name: last_modified_date
+                  type: datetime
+              - column:
+                  name: half_day
+                  type: BIT
+              - column:
+                  name: holiday_date
+                  type: date
+              - column:
+                  name: calendar_id
+                  type: BIGINT
+            tableName: holiday_aud
+  - changeSet:
+      id: 1642964955900-77
+      author: ferdoganf (generated)
+      changes:
+        - addUniqueConstraint:
+            columnNames: code
+            constraintName: UC_CALENDARCODE_COL
+            tableName: calendar
+  - changeSet:
+      id: 1642964955900-78
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: rev
+            baseTableName: holiday_aud
+            constraintName: FK9sii8g68wggngh19kjyn4m4k4
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: rev
+            referencedTableName: revinfo
+            validate: true
+  - changeSet:
+      id: 1642964955900-79
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: rev
+            baseTableName: calendar_aud
+            constraintName: FKhbi3mebnq58x1dfyw9sorxwy1
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: rev
+            referencedTableName: revinfo
+            validate: true
+  - changeSet:
+      id: 1642964955900-80
+      author: ferdoganf (generated)
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: calendar_id
+            baseTableName: holiday
+            constraintName: FKt1fbx4nnokx3whwybsdw3vexg
+            deferrable: false
+            initiallyDeferred: false
+            referencedColumnNames: id
+            referencedTableName: calendar
+            validate: true

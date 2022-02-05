@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1628723497762-71
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: name
+                  type: varchar(255)
+            tableName: real_estate_type
+  - changeSet:
+      id: 1628723497762-72
+      author: firaterdogan (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: name
+                  type: varchar(255)
+            tableName: real_estate_type_aud

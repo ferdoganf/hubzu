@@ -1,0 +1,60 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1637276505545-73
+      author: ferdoganf (generated)
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: real_estate_status_historyPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: bank_code
+                  type: VARCHAR(255)
+              - column:
+                  name: bank_name
+                  type: VARCHAR(255)
+              - column:
+                  name: city_code
+                  type: VARCHAR(255)
+              - column:
+                  name: city_name
+                  type: VARCHAR(255)
+              - column:
+                  name: created_date
+                  type: datetime
+              - column:
+                  name: district_code
+                  type: VARCHAR(255)
+              - column:
+                  name: district_name
+                  type: VARCHAR(255)
+              - column:
+                  name: real_estate_code
+                  type: VARCHAR(255)
+              - column:
+                  name: real_estate_id
+                  type: BIGINT
+              - column:
+                  name: real_estate_status_code_new
+                  type: VARCHAR(255)
+              - column:
+                  name: real_estate_status_code_old
+                  type: VARCHAR(255)
+              - column:
+                  name: real_estate_type_code
+                  type: VARCHAR(255)
+              - column:
+                  name: real_estate_type_name
+                  type: VARCHAR(255)
+              - column:
+                  name: title
+                  type: VARCHAR(255)
+              - column:
+                  name: user_id
+                  type: VARCHAR(255)
+            tableName: real_estate_status_history

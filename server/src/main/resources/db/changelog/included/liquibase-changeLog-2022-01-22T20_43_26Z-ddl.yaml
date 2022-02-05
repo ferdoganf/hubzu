@@ -1,0 +1,59 @@
+databaseChangeLog:
+- changeSet:
+    id: 1642884226744-73
+    author: ferdoganf (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              primaryKey: true
+              primaryKeyName: operationPK
+            name: id
+            type: BIGINT
+        tableName: operation
+- changeSet:
+    id: 1642884226744-74
+    author: ferdoganf (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              primaryKey: true
+              primaryKeyName: operation_audPK
+            name: id
+            type: BIGINT
+        - column:
+            constraints:
+              primaryKey: true
+              primaryKeyName: operation_audPK
+            name: rev
+            type: INT
+        tableName: operation_aud
+- changeSet:
+    id: 1642884226744-75
+    author: ferdoganf (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: id
+        baseTableName: operation
+        constraintName: FKa9ofx46rx8yn2j4g2f8b0akj7
+        deferrable: false
+        initiallyDeferred: false
+        referencedColumnNames: id
+        referencedTableName: user
+        validate: true
+- changeSet:
+    id: 1642884226744-76
+    author: ferdoganf (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: id,rev
+        baseTableName: operation_aud
+        constraintName: FKbnpx6ck6new343xindvbarv21
+        deferrable: false
+        initiallyDeferred: false
+        referencedColumnNames: id,rev
+        referencedTableName: user_aud
+        validate: true

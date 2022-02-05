@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1606943409191-69
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: parcel_search_url
+                  type: varchar(255)
+            tableName: real_estate_address
+  - changeSet:
+      id: 1606943409191-70
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: parcel_search_url
+                  type: varchar(255)
+            tableName: real_estate_address_aud

@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1577389010434-1
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: INSERT INTO `user_type` (`code`) VALUES ('ADMIN'),('BUYER');
+        - sql:
+            sql: INSERT INTO `user_status` (`code`) VALUES ('PENDING'),('ACTIVE'),('PASSIVE');
+        - sql:
+            sql: INSERT INTO `real_estate_type` (`code`) VALUES ('RESIDENTIAL'),('COMMERCIAL'),('LAND');
+        - sql:
+            sql: INSERT INTO `real_estate_status` (`code`) VALUES ('ACTIVE'),('PASSIVE'),('STARTED'),('FINISHED');
+        - sql:
+            sql: INSERT INTO `user` (`email_address`, `password`, `user_status_id`, `user_type_id`, `name`, `surname`, `code`) VALUES ('admin@hubzu.com', '$2y$12$amluOG5hdk8DDUyLCrbVAOMXzjQtQRNF63Mf6g4tNX/56YjeWLi0y', (SELECT `id` FROM `user_status` WHERE `code` = 'ACTIVE'), (SELECT `id` FROM `user_type` WHERE `code` = 'ADMIN'), 'John', 'Stone', 'f78557a6-7950-4f12-a773-5a06a8c9b393');
+        - sql:
+            sql: INSERT INTO `user` (`email_address`, `password`, `user_status_id`, `user_type_id`, `name`, `surname`, `code`) VALUES ('buyer@hubzu.com', '$2y$12$amluOG5hdk8DDUyLCrbVAOMXzjQtQRNF63Mf6g4tNX/56YjeWLi0y', (SELECT `id` FROM `user_status` WHERE `code` = 'ACTIVE'), (SELECT `id` FROM `user_type` WHERE `code` = 'BUYER'), 'Verona', 'Blair', '66861cd0-478a-4988-a1bd-e3e2de57e4d5');
+        - sql:
+            sql: INSERT INTO `admin` (`id`) VALUES ((SELECT `id` FROM `user` WHERE `email_address` = 'admin@hubzu.com'));
+        - sql:
+            sql: INSERT INTO `buyer` (`identity_number`, `phone`, `phone_country_code`, `id` ) VALUES ('12312312345','90', '5325555555', (SELECT `id` FROM `user` WHERE `email_address` = 'buyer@hubzu.com'));
+        - sql:
+            sql: INSERT INTO `bank` (`code`, `name`) VALUES ('10','Ziraat Bankası'),('64','Türkiye İş Bankası'),('12','Türkiye Halk Bankası'),('15','Vakıfbank'),('62','Garanti Bankası'),('67','Yapı ve Kredi Bankası'),('46','Akbank');

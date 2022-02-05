@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1605553651459-69
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: first_password
+                  type: varchar(255)
+            tableName: user
+  - changeSet:
+      id: 1605553651459-70
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: first_password
+                  type: varchar(255)
+            tableName: user_aud

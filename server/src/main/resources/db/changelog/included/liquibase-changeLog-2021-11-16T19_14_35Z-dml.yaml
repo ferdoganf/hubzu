@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1637090087887-71
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: INSERT INTO `sms` (`code`, `content`) VALUES ('ACTION_NEW_BID_SMS_TO_OLD_BIDDER','#{ILAN-NO} emlak kodlu \#{ILAN-BASLIGI} isimli taşınmaz için bir başka kullanıcı tarafından teklifinizden daha iyi bir teklif verilmiştir.');
+        - sql:
+            sql: INSERT INTO `sms` (`code`, `content`) VALUES ('ACTION_BID_WIN_SMS_TO_WINNER_BIDDER','Teklif verdiğiniz \#{ILAN-NO} emlak kodlu \#{ILAN-BASLIGI} isimli taşınmaz için yapılan e-ihale sona ermiş ve lehine sonuçlanmıştır.');
+        - sql:
+            sql: INSERT INTO `sms` (`code`, `content`) VALUES ('ACTION_BID_WIN_SMS_TO_LOSER_BIDDER','Teklif verdiğiniz \#{ILAN-NO} emlak kodlu \#{ILAN-BASLIGI} isimli taşınmaz için yapılan e-ihale sona ermiş ve teklifiniz düşük kaldığından bir başka alıcı lehine sonuçlanmıştır. İhale için yatırdığınız teminat başvuru sırasında belirttiğiniz IBAN numarasına gönderilecektir.');
+        - sql:
+            sql: INSERT INTO `sms` (`code`, `content`) VALUES ('ACTION_NEW_PHONE_SMS_TO_BUYER_FOR_VERIFICATION','#{CODE} kodu ile telefon numaranızı aktifleştirebilirsiniz.');

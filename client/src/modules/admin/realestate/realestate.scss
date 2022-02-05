@@ -1,0 +1,47 @@
+@import "./../../../common/ui/color.scss";
+
+.app { 
+	.body {
+		.admin {
+			form div.bordered{
+				padding: 1em;
+				border: 1px solid rgba(34, 36, 38, 0.15);	
+				margin-bottom: 3em;			
+
+				label {
+					white-space: nowrap;
+				}
+
+				.ui.grid {
+					width: 100%;
+					padding: 0.5em;
+
+					.minPadded.column:not(.row) {
+						padding-top: 0.4rem;
+						padding-bottom: 0.4rem;
+					}
+				}				
+			}
+			.ui.image.label {
+				width: 250px !important;
+				.detail{
+					width: 200px;
+					float: right;
+				}
+			}
+			form div.nonbordered{
+				margin-bottom: 2em;		
+				.field {
+					width: 100%;
+				}
+			}
+
+			.ui.grid.publichView {
+				.row{
+					padding-top: 0.5rem;
+    				padding-bottom: 0.5rem;
+				}
+			}
+		}
+	}
+}

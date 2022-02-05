@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1630921237102-71
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                  name: enabled
+                  type: bit
+            tableName: bank
+  - changeSet:
+      id: 1630921237102-72
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: enabled
+                  type: bit
+            tableName: bank_aud

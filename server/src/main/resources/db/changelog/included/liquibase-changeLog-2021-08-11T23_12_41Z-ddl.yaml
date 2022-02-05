@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1628723572039-71
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: UPDATE `real_estate_type` set name = 'Konut' WHERE `code` = 'RESIDENTIAL';
+        - sql:
+            sql: UPDATE `real_estate_type` set name = 'İş Yeri' WHERE `code` = 'COMMERCIAL';
+        - sql:
+            sql: UPDATE `real_estate_type` set name = 'Arsa' WHERE `code` = 'LAND';

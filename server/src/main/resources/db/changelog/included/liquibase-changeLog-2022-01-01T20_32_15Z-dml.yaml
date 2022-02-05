@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1641069154102-1
+      author: ferdoganf (generated)
+      changes:
+        - sql:
+            sql: INSERT INTO `real_estate_status` (`code`) VALUES ('FINISHED_SOLD');
+        - sql:
+            sql: UPDATE `bank` SET `finished_auctions_shown` = true WHERE `id` > 0;

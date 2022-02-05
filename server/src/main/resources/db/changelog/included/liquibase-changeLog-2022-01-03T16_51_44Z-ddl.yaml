@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1641228716736-73
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: description
+                  type: varchar(255)
+            tableName: direct_bid
+  - changeSet:
+      id: 1641228716736-74
+      author: ferdoganf (generated)
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: description
+                  type: varchar(255)
+            tableName: direct_bid_aud

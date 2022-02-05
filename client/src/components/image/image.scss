@@ -1,0 +1,16 @@
+.app {
+	.slick-next:before, .slick-prev:before {
+		//color: black;
+		z-index: 1000;
+	}
+
+	.slick-prev {
+		left: 2px;
+		z-index: 1000;
+	}
+
+	.slick-next {
+		right: 2px;
+		z-index: 1000;
+	}
+}
