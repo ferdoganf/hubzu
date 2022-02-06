@@ -58,7 +58,7 @@ hubzu:
     refresh-token-validity-seconds-web: 2592000
   image:
     root:
-      folder: /var/hubzu/cdn
+      folder: /home/firaterdogan/dev/github/hubzu/client/public/assets/cdn
   mail:
     admin: ferdoganf@gmail.com
     from: ferdoganf@gmail.com

@@ -24,7 +24,7 @@ logging:
 hubzu:
   image:
     root:
-      folder: /home/ferdoganf/hubzutmp
+      folder: /home/firaterdogan/dev/github/hubzu/client/public/assets/cdn
   url:
     base: http://localhost:3000
   mail:

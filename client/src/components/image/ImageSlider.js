@@ -28,7 +28,7 @@ export default class ImageSlider extends React.Component {
                     <div key={image.path + image.fileName}>
                       <img width={this.props.width} src={
                         /*'https://s3.amazonaws.com/FMRealty/property/triangle/24/2305024_1.jpg'*/
-                        '/cdn' + image.path + '/' + image.fileName
+                        '/assets/cdn' + image.path + '/' + image.fileName
                       } alt={image.fileName}></img>
                     </div>
                   )

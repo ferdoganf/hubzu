@@ -214,7 +214,7 @@ class RealestateUpdatePhoto extends Component {
                                 .filter(file => !this.state.deletedFiles.includes(file.code))
                                 .map(file => (
                                     <Card key={file.code}>
-                                        <Image src={'/cdn' + file.path + '/' + file.fileName} wrapped ui={false} />
+                                        <Image src={'/assets/cdn' + file.path + '/' + file.fileName} wrapped ui={false} />
                                         <Card.Content>
                                             <Card.Meta>{file.fileName} - {Math.round(file.size / 1000) + ' kB'}</Card.Meta>
                                         </Card.Content>
